@@ -9,7 +9,8 @@
 
   display: grid;
   grid-template-rows: 1fr 1fr 3fr 1fr;
-  grid-template-columns: 1fr 3fr ; 
+  grid-template-columns: 1fr 3fr;
+  gap: 4px; 
 }
 
 .container div {
@@ -37,6 +38,11 @@
 
   grid-row: 2 / 4;
   grid-column: 1 / 2;
+
+  display: grid;
+  /* grid-template-rows: repeat(4);
+  grid-template-columns: ; */
+  gap: 50px;
 }
 
 .sidebar .photo {
