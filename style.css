@@ -10,7 +10,7 @@
   display: grid;
   grid-template-rows: 1fr 1fr 3fr 1fr;
   grid-template-columns: 1fr 3fr;
-  gap: 4px; 
+  gap: 4px;
 }
 
 .container div {
@@ -30,6 +30,7 @@
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 25% 75%;
+  align-items: center;
 }
 
 .menu ul {
@@ -45,14 +46,12 @@
 }
 
 .sidebar {
-  background-color: #C50208;
+  background-color: #c50208;
 
   grid-row: 2 / 4;
   grid-column: 1 / 2;
 
   display: grid;
-  /* grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr; */
   gap: 50px;
 }
 
@@ -62,18 +61,23 @@
   font-size: 12px;
   font-weight: normal;
   border-radius: 10px;
-}
 
+  display: grid;
+  place-items: center;
+}
 
 .sidebar .side-content {
   background-color: white;
   color: black;
   font-size: 16px;
   font-weight: normal;
+
+  display: grid;
+  place-items: center;
 }
 
 .nav {
-  background-color: #C50208;
+  background-color: #c50208;
 
   grid-row: 2 / 3;
   grid-column: 2 / 2;
@@ -111,7 +115,8 @@
 }
 
 .article .card {
-  background-color: #FFFFFF;
+  height: 200px;
+  background-color: #ffffff;
   color: black;
   text-align: center;
 }
